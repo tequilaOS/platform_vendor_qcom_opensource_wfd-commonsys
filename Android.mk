@@ -1,5 +1,7 @@
 LOCAL_PATH := $(call my-dir)
 
+ifneq ($(filter $(QSSI_SUPPORTED_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
+
 #Disable WFD for selected 32-bit targets
 ifeq ($(call is-board-platform,bengal),true)
 ifeq ($(TARGET_BOARD_SUFFIX),_32)
@@ -18,4 +20,6 @@ ifneq ($(TARGET_HAS_LOW_RAM), true)
 include $(call all-makefiles-under, $(LOCAL_PATH))
 endif
 endif
+endif
+
 endif
