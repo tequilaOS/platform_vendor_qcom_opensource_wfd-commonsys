@@ -1,4 +1,3 @@
-ifeq ($(BUILD_VIDEO_TECHPACK_SOURCE), true)
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
@@ -28,4 +27,3 @@ LOCAL_CFLAGS += -O0
 
 LOCAL_SANITIZE := integer_overflow
 include $(BUILD_SHARED_LIBRARY)
-endif # BUILD_VIDEO_TECHPACK_SOURCE
