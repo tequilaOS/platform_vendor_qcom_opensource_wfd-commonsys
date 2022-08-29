@@ -21,7 +21,6 @@ LOCAL_STATIC_LIBRARIES := libFraunhoferAAC
 
 LOCAL_VENDOR_MODULE := true
 
-LOCAL_MULTILIB := 64
 LOCAL_MODULE := libwfdaac_vendor
 LOCAL_CFLAGS += -O0
 
